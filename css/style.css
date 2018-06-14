@@ -664,6 +664,116 @@ margin-right: 75px;
   line-height: 24px;
   color: #fff;
   position: relative;
-  top: 230px;
+  top: -10px;
   left: 25px;
+}
+
+.map-card__info
+{
+  width: 170px;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  left: 25px;
+  top: 30px;
+  position: relative;
+  }
+
+  .map-card__info--zakaz
+  {
+    left: 25px;
+    top: 10px;
+    position: relative;
+    width: 175px;
+  }
+
+  .map-card__info--time
+  {
+    position: relative;
+    top:-20px;
+  }
+
+.map-card__adresss
+{
+  width: 245px;
+  font-family: "Roboto-Bold";
+  font-size: 18px;
+  line-height: 24px;
+  color: #323232;
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+
+.map-card__adresss--phone
+{
+  position: relative;
+  top:0px;
+}
+
+.page-footer
+{
+  height: auto;
+  display: flex;
+}
+
+.social__list
+{
+  list-style-type:none;
+  display: flex;
+  margin-left: -25px;
+  margin-top: 30px
+}
+
+.social__item img
+{
+  border: 3px solid #c2cec7;
+  border-radius: 20px;
+  margin-left: 12px;
+}
+
+.footer-nav
+{
+  margin-left: 165px;
+  margin-top: 15px;
+}
+
+.footer-nav__list
+{
+  width: 340px;
+  list-style-type:none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav__item
+{
+  font-family: "Roboto-Regular";
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c2cec7;
+}
+
+.footer-nav__item--eco
+{
+  margin-left: 40px;
+}
+
+.footer-html
+{
+  margin-left: 225px;
+}
+
+.description-html
+{
+  font-family: "Roboto-Regular";
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  position: relative;
+  bottom: 20px;
 }

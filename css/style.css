@@ -69,6 +69,14 @@ font-family: "Roboto-ThinItalic";
   padding-top: 20px;
 }
 
+.header-nav
+{
+  padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}
+
 .nav__list
 {
   display: inline-flex;
@@ -86,6 +94,65 @@ font-family: "Roboto-ThinItalic";
   line-height: 18px;
   border-bottom: 1px solid #fff;
   margin-right: 30px;
+  display:inline-block;
+  display:block;
+}
+
+.nav__item--catalog:hover
+{
+  width: 87px;
+  height: 32px;
+  font-family: "Roboto-Bold";
+   background-image: url("../img/catalog-fon.png");
+   text-align: center;
+   color: #000;
+   cursor: pointer;
+   box-sizing: border-box;
+}
+
+.header-nav .nav__list .nav-catalog__list {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+			}
+
+			/* отображаем выпадающий список при наведении */
+			.header-nav .nav__list .nav__item:hover > .nav-catalog__list {
+			    display:inherit;
+			}
+
+			/* первый уровень выпадающего списка */
+			.header-nav .nav__list .nav-catalog__list .nav-catalog__item {
+			    min-width:140px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}
+
+.nav-catalog__list
+{
+  padding-top: 20px;
+  padding-bottom: 17px;
+  height: 175px;
+  border-radius: 6px;
+  background-color: #fff;
+  position: relative;
+  top: 5px;
+}
+
+.nav-catalog__item
+{
+  padding-bottom: 17px;
+}
+
+
+.nav-catalog__item a
+{
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #323232;
 }
 
 .header-blok
@@ -106,7 +173,7 @@ font-family: "Roboto-ThinItalic";
   background-position: center center;
   position: relative;
   bottom: 105px;
-  right: 40px;
+  right: 55px;
 }
 .header-search:hover
 {
@@ -121,7 +188,7 @@ font-family: "Roboto-ThinItalic";
   background-position: center center;
   position: relative;
   bottom: 105px;
-  right: 40px;
+  right: 55px;
 }
 .search__form{
     display:none;
@@ -160,25 +227,10 @@ font-family: "Roboto-ThinItalic";
     z-index:9999;
     width:340px;
 }
-.header-search::before
-{
-  content: "";
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: url("../img/loupe.svg") no-repeat;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-  bottom: 105px;
-  right: 40px;
-}
 
 .header-login
 {
-  width: 100px;
+  width: 92px;
   height: 30px;
   font-family: "Roboto-Medium";
   color: #fff;
@@ -188,8 +240,8 @@ font-family: "Roboto-ThinItalic";
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   position: relative;
-  bottom:120px;
-  right: 35px;
+  bottom:104px;
+  right: 45px;
 }
 
 .header-login a
@@ -212,12 +264,35 @@ font-family: "Roboto-ThinItalic";
   background-position: center center;
   position: relative;
   top:5px;
-  left: 18px;
+  left: 15px;
+}
+
+.login__form{
+    display:none;
+    margin-left:-300px;
+    padding:10px;
+    background:#f3f3f3;
+    width: 340px;
+    height:80px;
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    position: relative;
+    margin-top:-70px;
+    border-radius: 8px;
+}
+
+.header-login:hover .login__form{
+    display:block;
+    position:absolute;
+    top:120px;
+    z-index:9999;
+    width:340px;
 }
 
 .header-basket
 {
-  width: 100px;
+  width: 92px;
   height: 30px;
   font-family: "Roboto-Medium";
   color: #fff;
@@ -236,7 +311,7 @@ font-family: "Roboto-ThinItalic";
   text-decoration:none;
   color: #fff;
   position: relative;
-  left:45px;
+  left:40px;
   bottom: 15px;
 }
 
@@ -251,7 +326,7 @@ font-family: "Roboto-ThinItalic";
   background-position: center center;
   position: relative;
   top:5px;
-  left: 18px;
+  left: 15px;
 }
 
 .header-description

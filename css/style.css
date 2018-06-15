@@ -79,6 +79,7 @@ font-family: "Roboto-ThinItalic";
 
 .nav__list
 {
+  width: 450px;
   display: inline-flex;
   list-style-type: none;
   position: relative;
@@ -100,20 +101,20 @@ font-family: "Roboto-ThinItalic";
 
 .nav__item--catalog:hover
 {
-  width: 87px;
-  height: 32px;
   font-family: "Roboto-Bold";
    background-image: url("../img/catalog-fon.png");
    text-align: center;
    color: #000;
    cursor: pointer;
    box-sizing: border-box;
+   border:none;
+   position: relative;
 }
 
 .header-nav .nav__list .nav-catalog__list {
 			    display: none;
 			    position: absolute;
-			    top: 100%;
+			    top: 20px;
 			}
 
 			/* отображаем выпадающий список при наведении */
@@ -127,6 +128,7 @@ font-family: "Roboto-ThinItalic";
 			    float:none;
 			    display:list-item;
 			    position: relative;
+          text-align: left;
 			}
 
 .nav-catalog__list
@@ -138,21 +140,76 @@ font-family: "Roboto-ThinItalic";
   background-color: #fff;
   position: relative;
   top: 5px;
+  list-style-type: none;
+  width: 140px;
+  padding: 0;
+  position: relative;
+  left: 20px;
+  padding-top: 10px;
 }
 
 .nav-catalog__item
 {
+  width: 100%;
   padding-bottom: 17px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+}
+
+.nav-catalog__item--new
+{
+  font-family: "Roboto-Bold";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 14px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+}
+
+.nav-catalog__item--cream
+{
+  position: relative;
+  padding-top: 5px;
+}
+
+.nav-catalog__item:hover
+{
+  background-color: #fbded7;
+  background-size: 100%;
+}
+
+.nav-catalog__item:focus
+{
+  background-color: #f6b5a5;
+  width: 142px;
+}
+
+.nav-catalog__item:active
+{
+  background-color: #f6b5a5;
 }
 
 
 .nav-catalog__item a
 {
+  width: 100%;
   font-family: "Roboto-Regular";
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
   color: #323232;
+  text-align:left;
+  position: relative;
+  left: 15px;
+
 }
 
 .header-blok
@@ -336,7 +393,7 @@ font-family: "Roboto-ThinItalic";
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  margin-left: 1023px;
+  margin-left: 1000px;
   bottom: 130px;
 }
 
@@ -346,6 +403,7 @@ font-family: "Roboto-ThinItalic";
   color: #fff;
   font-size: 14px;
   line-height: 16px;
+  margin-left: 15px;
 }
 
 .header-phone
@@ -356,7 +414,6 @@ font-family: "Roboto-ThinItalic";
   line-height: 24px;
   position: relative;
   bottom: 35px;
-  right: 15px;
 }
 
 .header-title
@@ -534,6 +591,68 @@ font-family: "Roboto-ThinItalic";
 .catalog__description--coffee
 {
   width: 270px;
+}
+
+.catalog__button
+{
+  display: none;
+  width: 200px;
+  height: 40px;
+  background-color: #f26743;
+  font-family: "Roboto-Bold";
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+.catalog-item:hover
+{
+  width: 300px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  border-radius: 7px;
+  top:-10px;
+  z-index: 9999;
+}
+
+.catalog-item:hover .catalog__photo
+{
+  background-color: transparent;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.catalog-item:hover .catalog__price
+{
+  position: relative;
+  bottom: 90px;
+  left: 20px;
+}
+
+
+.catalog-item:hover .catalog__description
+{
+  position: relative;
+  bottom: 120px;
+  left: 20px;
+}
+
+.catalog-item:hover::before
+{
+  display: none;
+}
+
+.catalog-item:hover .catalog__button
+{
+  position: relative;
+  bottom: 125px;
+  display: block;
+  justify-content: center;
 }
 
 .shop-section

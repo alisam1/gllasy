@@ -99,8 +99,18 @@ font-family: "Roboto-ThinItalic";
   display:block;
 }
 
+.nav__item--catalog:hover .header-blok
+{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 25px;
+}
+
 .nav__item--catalog:hover
 {
+  width: 87px;
+  height: 32px;
   font-family: "Roboto-Bold";
    background-image: url("../img/catalog-fon.png");
    text-align: center;
@@ -109,12 +119,22 @@ font-family: "Roboto-ThinItalic";
    box-sizing: border-box;
    border:none;
    position: relative;
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 5px;
+   bottom: 5px;
+   margin-left: -10px;
+}
+
+.nav__item:hover:nth-child(1)
+{
+  margin-right: 10px;
 }
 
 .header-nav .nav__list .nav-catalog__list {
 			    display: none;
 			    position: absolute;
-			    top: 20px;
+			    top: 35px;
 			}
 
 			/* отображаем выпадающий список при наведении */
@@ -623,7 +643,7 @@ font-family: "Roboto-ThinItalic";
 {
   background-color: transparent;
   position: relative;
-  top: 5px;
+  top: 0px;
   left: 20px;
 }
 

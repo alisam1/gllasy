@@ -65,6 +65,7 @@ font-family: "Roboto-ThinItalic";
 
 .header-logo
 {
+  width: 150px;
   padding-left: 27px;
   padding-top: 20px;
 }
@@ -75,6 +76,7 @@ font-family: "Roboto-ThinItalic";
 	margin:0;
 	list-style: none;
 	position: relative;
+  width: 450px;
 }
 
 .nav__list
@@ -97,14 +99,6 @@ font-family: "Roboto-ThinItalic";
   margin-right: 30px;
   display:inline-block;
   display:block;
-}
-
-.nav__item--catalog:hover .header-blok
-{
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 25px;
 }
 
 .nav__item--catalog:hover
@@ -643,7 +637,7 @@ font-family: "Roboto-ThinItalic";
 {
   background-color: transparent;
   position: relative;
-  top: 0px;
+  top: 5px;
   left: 20px;
 }
 

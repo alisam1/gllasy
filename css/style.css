@@ -623,14 +623,14 @@ font-family: "Roboto-ThinItalic";
 {
   background-color: transparent;
   position: relative;
-  top: 20px;
+  top: 5px;
   left: 20px;
 }
 
 .catalog-item:hover .catalog__price
 {
   position: relative;
-  bottom: 90px;
+  bottom: 110px;
   left: 20px;
 }
 
@@ -638,7 +638,7 @@ font-family: "Roboto-ThinItalic";
 .catalog-item:hover .catalog__description
 {
   position: relative;
-  bottom: 120px;
+  bottom: 135px;
   left: 20px;
 }
 
@@ -650,7 +650,7 @@ font-family: "Roboto-ThinItalic";
 .catalog-item:hover .catalog__button
 {
   position: relative;
-  bottom: 125px;
+  bottom: 135px;
   display: block;
   justify-content: center;
 }

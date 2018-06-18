@@ -142,18 +142,18 @@ body
 			}
 
 			/* отображаем выпадающий список при наведении */
-			.header-nav .nav__list .nav__item:hover > .nav-catalog__list {
+.header-nav .nav__list .nav__item:hover > .nav-catalog__list {
 			    display:inherit;
 			}
 
 			/* первый уровень выпадающего списка */
-			.header-nav .nav__list .nav-catalog__list .nav-catalog__item {
+.header-nav .nav__list .nav-catalog__list .nav-catalog__item {
 			    min-width:140px;
 			    float:none;
 			    display:list-item;
 			    position: relative;
           text-align: left;
-			}
+	}
 
 .nav-catalog__list
 {

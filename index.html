@@ -9,43 +9,75 @@
   </head>
    <body>
    <div class="main container">
-     <header class="page-header container">
-       <div class="header-logo"><img src="img/logo.svg" alt="Логотип"></div>
-       <nav class="header-nav">
-         <ul class="nav__list">
-           <li class="nav__item nav__item--catalog">Каталог
-             <ul class="nav-catalog__list">
-                     <li class="nav-catalog__item nav-catalog__item--new"><a href="#">Новинки</a></li>
-                     <li class="nav-catalog__item nav-catalog__item-cream"><a href="#">Сливочное</a></li>
-                     <li class="nav-catalog__item"><a href="#">Щербеты</a></li>
-                     <li class="nav-catalog__item"><a href="#">Фруктовый лед</a></li>
-                     <li class="nav-catalog__item"><a href="#">Мелорин</a></li>
+
+     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="container">
+        <header class="page-header container">
+          <div class="header-logo"><img src="img/logo.svg" alt="Логотип"></div>
+          <nav class="header-nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--catalog">Каталог
+                <ul class="nav-catalog__list">
+                        <li class="nav-catalog__item nav-catalog__item--new"><a href="#">Новинки</a></li>
+                        <li class="nav-catalog__item nav-catalog__item-cream"><a href="#">Сливочное</a></li>
+                        <li class="nav-catalog__item"><a href="#">Щербеты</a></li>
+                        <li class="nav-catalog__item"><a href="#">Фруктовый лед</a></li>
+                        <li class="nav-catalog__item"><a href="#">Мелорин</a></li>
+               </ul>
+              </li>
+              <li class="nav__item nav__item--delivery">Доставка и оплата</li>
+              <li class="nav__item nav__item--company">О компании</li>
             </ul>
-           </li>
-           <li class="nav__item nav__item--delivery">Доставка и оплата</li>
-           <li class="nav__item nav__item--company">О компании</li>
-         </ul>
-       </nav>
-       <div class="header-blok">
-         <div class="header-search">
-         <div class="search__form">
-           <input type="text" name="search" placeholder="Что ищем?">
-         </div>
-       </div>
-         <div class="header-login"><a href="#">Вход</a>
-           <div class="login__form">
-             <input type="text" name="search" placeholder="Что ищем?">
+          </nav>
+          <div class="header-blok">
+            <div class="header-search">
+            <div class="search__form">
+              <input type="text" name="search" placeholder="Что ищем?">
+            </div>
+          </div>
+            <div class="header-login"><a href="#">Вход</a>
+              <div class="login__form">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </div>
+            </div>
+             <p class="header-basket"><a href="#">Пусто</a></p>
+          </div>
+           <div class="header-description">
+             <p class="header-time">С 10 до 20, ежедневно</p>
+             <p class="header-phone">8 812 450-25-25</p>
            </div>
-         </div>
-          <p class="header-basket"><a href="#">Пусто</a></p>
-       </div>
-        <div class="header-description">
-          <p class="header-time">С 10 до 20, ежедневно</p>
-          <p class="header-phone">8 812 450-25-25</p>
-        </div>
-        <h1 class="header-title">Крем-брюле и пломбир с малиновым джемом</h1>
-        <button class="header-button">Давайте оба</button>
-     </header>
+        </header>
+        <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
      <section class="card-section container">
        <div class="card card--raspberry">
@@ -153,6 +185,7 @@
           <p class="description-html">Сделано в HTML Academy © 2017</p>
         </div>
      </footer>
+       </div>
    </div>
  </body>
  </html>

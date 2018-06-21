@@ -246,22 +246,41 @@ body
   list-style-type: none;
   position: relative;
   bottom: 65px;
-  left: 165px;
+  left: 170px;
 }
 
-.nav__item
+.nav__item a
 {
   font-family: "Roboto-Bold";
   color: #fff;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
   border-bottom: 1px solid #fff;
-  margin-right: 30px;
   display:inline-block;
   display:block;
 }
 
-.nav__item--catalog:hover
+.nav__item--catalog
+{
+  width: 87px;
+  height: 32px;
+  font-family: "Roboto-Bold";
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  bottom: 5px;
+  margin-left: -15px;
+  }
+
+.nav__item--catalog a:hover
 {
   width: 87px;
   height: 32px;
@@ -271,13 +290,20 @@ body
    color: #000;
    cursor: pointer;
    box-sizing: border-box;
+   text-decoration: none;
    border:none;
    position: relative;
    padding-left: 12px;
    padding-right: 12px;
    padding-top: 5px;
    bottom: 5px;
-   margin-left: -10px;
+   margin-left: -15px;
+}
+
+
+.nav__item--catalog a:active
+{
+  background-image: url("../img/catalog-active.png");
 }
 
 .nav__item:hover:nth-child(1)
@@ -291,13 +317,11 @@ body
 			    top: 35px;
 			}
 
-			/* отображаем выпадающий список при наведении */
 .header-nav .nav__list .nav__item:hover > .nav-catalog__list {
 			    display:inherit;
 			}
 
-			/* первый уровень выпадающего списка */
-.header-nav .nav__list .nav-catalog__list .nav-catalog__item {
+.header-nav .nav__list .nav-catalog__list .nav-catalog__bottom {
 			    min-width:140px;
 			    float:none;
 			    display:list-item;
@@ -318,11 +342,14 @@ body
   width: 140px;
   padding: 0;
   position: relative;
-  left: 20px;
+  left: 10px;
+  margin-left: -20px;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
-.nav-catalog__item
+
+.nav-catalog__bottom a
 {
   width: 100%;
   padding-bottom: 17px;
@@ -331,48 +358,64 @@ body
   text-align: center;
   position: relative;
   vertical-align: middle;
+  text-decoration: none;
+  border: none;
 }
 
-.nav-catalog__item--new
+.nav-catalog__bottom--new a
 {
+  width: 60px;
   font-family: "Roboto-Bold";
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d1d0ce;
   padding-bottom: 14px;
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
-  position: relative;
   vertical-align: middle;
+  right: 10px;
+  padding-left: 10px;
 }
 
-.nav-catalog__item--cream
+.nav-catalog__bottom--cream
 {
   position: relative;
   padding-top: 5px;
 }
 
-.nav-catalog__item:hover
+.nav-catalog__bottom a:hover
 {
+  width: 100%;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  background-image: none;
   background-color: #fbded7;
-  background-size: 100%;
+  text-align: left;
 }
 
-.nav-catalog__item:focus
+.nav-catalog__bottom a:focus
+{
+  width: 100%;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  background-image: none;
+  background-color: #f6b5a5;
+  text-align: left;
+}
+
+.nav-catalog__bottom a:active
 {
   background-color: #f6b5a5;
-  width: 142px;
-}
-
-.nav-catalog__item:active
-{
-  background-color: #f6b5a5;
 }
 
 
-.nav-catalog__item a
+.nav-catalog__bottom a
 {
   width: 100%;
   font-family: "Roboto-Regular";
@@ -382,7 +425,6 @@ body
   color: #323232;
   text-align:left;
   position: relative;
-  left: 15px;
 
 }
 
@@ -454,7 +496,7 @@ body
 .header-search:hover .search__form{
     display:block;
     position:absolute;
-    top:120px;
+    top:106px;
     z-index:9999;
     width:340px;
 }
@@ -475,6 +517,12 @@ body
   right: 45px;
 }
 
+.header-login:hover
+{
+  background-color: rgba(255, 255, 255);
+  color: #000;
+}
+
 .header-login a
 {
   text-decoration:none;
@@ -483,6 +531,22 @@ body
   left:45px;
   bottom: 15px;
 }
+
+.header-login a:hover
+{
+  color: #000;
+}
+
+.header-login a:active
+{
+  color: #000;
+}
+
+.header-login a:checked
+{
+  color: #000;
+}
+
 
 .header-login::before
 {
@@ -498,19 +562,49 @@ body
   left: 15px;
 }
 
+.header-login:hover:before
+{
+  content: "";
+  display: block;
+  width: 21px;
+  height: 19px;
+  background: url("../img/login-hover.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top:5px;
+  left: 15px;
+}
+
 .login__form{
     display:none;
-    margin-left:-300px;
+    margin-left:-200px;
     padding:10px;
     background:#f3f3f3;
-    width: 340px;
-    height:80px;
+    width: 277px;
+    height:210px;
     -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
     -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
     box-shadow:0 5px 5px rgba(0,0,0,0.3);
     position: relative;
-    margin-top:-70px;
+    margin-top:-85px;
     border-radius: 8px;
+}
+
+.login__form input
+{
+  width: 237px;
+  height: 42px;
+  border-radius: 6px;
+  border:1px solid #d3d3d2;
+  margin-left: 8px;
+  margin-top: 15px;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header-login:hover .login__form{
@@ -518,7 +612,64 @@ body
     position:absolute;
     top:120px;
     z-index:9999;
-    width:340px;
+}
+
+.login__group
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.login__button
+{
+  width: 100px;
+  height: 45px;
+  font-family: "Roboto-Bold";
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration:none;
+  border: none;
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.login__description a
+{
+  font-family: "Roboto-Regular";
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration:none;
+  border-bottom: 1px solid #323232;
+  position: relative;
+  left: 30px;
+  bottom: 0;
+}
+
+.login__description--reg a
+{
+  position: relative;
+  left: 30px;
+  bottom: 15px;
+}
+
+.login__description a:hover
+{
+  color: #e84d37;
+  border-bottom: 1px solid #e84d37;
+}
+
+.login__description--reg a:hover
+{
+  color: #e84d37;
+  border-bottom: 1px solid #e84d37;
 }
 
 .header-basket
@@ -1228,7 +1379,7 @@ margin-right: 75px;
   bottom: 12px;
 }
 
-.nav__item--catalog
+.nav__item--current
 {
   width: 87px;
   height: 32px;

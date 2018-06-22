@@ -1908,8 +1908,8 @@ margin-right: 75px;
 
 .catalog-item__page
 {
-  height: 340px;
-  margin-top: 15px;
+  width: 290px;
+  margin-top: -50px;
 }
 
 .catalog-item__page::before
@@ -1919,33 +1919,27 @@ margin-right: 75px;
 
 .catalog-item__page:hover
 {
-  width: 300px;
+  width: 290px;
   height: 400px;
   background-color: rgba(255, 255, 255, 0.2);
   position: relative;
-  margin-top: -50px;
+  margin-top: -110px;
   border-radius: 7px;
   z-index: 9999;
 }
 
 .catalog-item__page:hover .catalog-item__page
 {
-  margin-top: -40px;
-}
-{
-  width: 300px;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 7px;
-  z-index: 9999;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .catalog-item__page:hover .catalog__photo
 {
   background-color: transparent;
   position: relative;
-  top: 5px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
 }
 
 .catalog-item__page:hover .catalog__price

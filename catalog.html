@@ -34,10 +34,39 @@
        </div>
          <div class="header-login header-login__catalog"><a href="#">Вход</a>
            <div class="login__form">
-             <input type="text" name="search" placeholder="Что ищем?">
+             <input type="text" name="e-mail" placeholder="Электронная почта">
+             <input type="text" name="password" placeholder="Пароль">
+             <div class="login__group">
+             <button class="login__button">Войти</button>
+             <div class="description__group">
+             <p class="login__description"><a href="#">Забыли пароль?</a></p>
+             <p class="login__description login__description--reg"><a href="#">Новая регистрация</a></p>
+             </div>
+             </div>
            </div>
          </div>
-          <p class="header-basket header-basket__catalog"><a href="#">2 товара</a></p>
+          <div class="header-basket header-basket__catalog"><a href="#">2 товара</a>
+            <div class="header__card">
+              <table class="header-basket__table">
+                  <tr class="table__line">
+                  <td><img src="img/card-x.svg" alt=""></td>
+                  <td class="table__img"><img src="img/ice-cream-1.svg" alt=""></td>
+                  <td class="table__description">Пломбир с апельсиновым джемом</td>
+                  <td class="table__weight">1,5 кг х <span>200 руб.</span></td>
+                  <td class="table__price">300 руб.</td>
+                  </tr>
+                  <tr class="table__line">
+                  <td><img src="img/card-x.svg" alt=""></td>
+                  <td class="table__img"><img src="img/ice-cream-2.svg" alt=""></td>
+                  <td class="table__description">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="table__weight">1,5 кг х <span>300 руб.</span></td>
+                  <td class="table__price">450 руб.</td>
+                  </tr>
+              </table>
+                <p class="header__card__description">Итого: 750 руб.</p>
+                <button class="header__card__button">Оформить заказ</button>
+            </div>
+          </div>
        </div>
         <div class="header-description header-description--catalog">
           <p class="header-time">С 10 до 20, ежедневно</p>

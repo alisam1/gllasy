@@ -1903,65 +1903,25 @@ margin-right: 75px;
 {
   position: relative;
   bottom: 140px;
-  margin-top: 90px;
+  margin-top: 110px;
 }
+
 
 .catalog-item__page
 {
-  width: 290px;
-  margin-top: -50px;
+  height: 340px;
+  margin-bottom: 20px;
+}
+
+.catalog-item__page:hover
+{
+  position: relative;
+  top: -60px;
 }
 
 .catalog-item__page::before
 {
   display: none;
-}
-
-.catalog-item__page:hover
-{
-  width: 290px;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
-  margin-top: -110px;
-  border-radius: 7px;
-  z-index: 9999;
-}
-
-.catalog-item__page:hover .catalog-item__page
-{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.catalog-item__page:hover .catalog__photo
-{
-  background-color: transparent;
-  position: relative;
-  top: 10px;
-  left: 10px;
-}
-
-.catalog-item__page:hover .catalog__price
-{
-  position: relative;
-  bottom: 110px;
-  left: 20px;
-}
-
-.catalog-item__page:hover .catalog__description
-{
-  position: relative;
-  bottom: 130px;
-  left: 20px;
-}
-
-.catalog-item__page:hover .catalog__button
-{
-  position: relative;
-  bottom: 135px;
-  display: block;
-  justify-content: center;
 }
 
 .pagination

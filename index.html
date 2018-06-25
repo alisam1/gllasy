@@ -104,28 +104,36 @@
      <section class="catalog-section container">
           <div class="catalog">
             <div class="catalog-item">
-              <img src="img/orange.png" alt="" class="catalog__photo">
-              <p class="catalog__price">310 <span><img src="img/ruble.svg" alt=""></span>/<span>кг</span></p>
-              <p class="catalog__description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-              <button class="catalog__button">Быстрый просмотр</button>
+              <div class="catalog-item__hover">
+                <img src="img/orange.png" alt="" class="catalog__photo">
+                <p class="catalog__price">310 <span><img src="img/ruble.svg" alt=""></span><span class="slash">/</span><span>кг</span></p>
+                <p class="catalog__description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+                <button class="catalog__button">Быстрый просмотр</button>
+              </div>
             </div>
             <div class="catalog-item">
+              <div class="catalog-item__hover">
               <img src="img/coffee.png" alt="" class="catalog__photo">
-              <p class="catalog__price">380 <span><img src="img/ruble.svg" alt=""></span>/<span>кг</span></p>
+              <p class="catalog__price">380 <span><img src="img/ruble.svg" alt=""></span><span class="slash">/</span><span>кг</span></p>
               <p class="catalog__description catalog__description--coffee"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
               <button class="catalog__button">Быстрый просмотр</button>
+              </div>
             </div>
             <div class="catalog-item">
+              <div class="catalog-item__hover">
               <img src="img/straw.png" alt="" class="catalog__photo">
-              <p class="catalog__price">355 <span><img src="img/ruble.svg" alt=""></span>/<span>кг</span></p>
+              <p class="catalog__price">355 <span><img src="img/ruble.svg" alt=""></span><span class="slash">/</span><span>кг</span></p>
               <p class="catalog__description"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
               <button class="catalog__button">Быстрый просмотр</button>
             </div>
+          </div>
             <div class="catalog-item">
+              <div class="catalog-item__hover">
               <img src="img/cream.png" alt="" class="catalog__photo">
-              <p class="catalog__price">415 <span><img src="img/ruble.svg" alt=""></span>/<span>кг</span></p>
+              <p class="catalog__price">415 <span><img src="img/ruble.svg" alt=""></span><span class="slash">/</span><span>кг</span></p>
               <p class="catalog__description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
               <button class="catalog__button">Быстрый просмотр</button>
+            </div>
             </div>
           </div>
      </section>
@@ -167,7 +175,23 @@
           <p class="map-card__adresss map-card__adresss--phone">8 812 450-25-25</p>
           <p class="map-card__info map-card__info--time">(с 10 до 20 ежедневно)</p>
         </div>
-        <button class="map-card__button">Форма обратной связи</button>
+        <form action="#openModal">
+		          <button class="map-card__button">Форма обратной связи</button>
+	      </form>
+              <div id="openModal" class="modalDialog">
+              	<div>
+              		<a href="#close" title="Закрыть" class="close"></a>
+                  <p class="modal__description">Мы обязательно вам ответим!</p>
+                  <form id="contact" action="#" method="post">
+                    <div class="username_all">
+                      <input placeholder="Как вас зовут?" type="text" tabindex="1">
+                      <input placeholder="Ваша почта для ответа" type="email" tabindex="2">
+                    </div>
+                      <textarea placeholder="Напишите что-нибудь..." tabindex="5"></textarea>
+                      <button class ="modal__button">Отправить</button>
+                  </form>
+                </div>
+              </div>
       </div>
      </section>
 

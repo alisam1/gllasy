@@ -310,11 +310,6 @@ body
   background-image: url("../img/catalog-active.png");
 }
 
-.nav__item:hover:nth-child(1)
-{
-  margin-right: 10px;
-}
-
 .header-nav .nav__list .nav-catalog__list {
 			    display: none;
 			    position: absolute;
@@ -551,7 +546,6 @@ body
 .header-login:hover
 {
   background-color: rgba(255, 255, 255);
-  color: #000;
 }
 
 .header-login a
@@ -563,17 +557,17 @@ body
   bottom: 15px;
 }
 
-.header-login a:hover
+.header-login:hover a
 {
   color: #000;
 }
 
-.header-login a:active
+.header-login:active a
 {
   color: #000;
 }
 
-.header-login a:checked
+.header-login:hover a
 {
   color: #000;
 }

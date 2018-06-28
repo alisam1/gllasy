@@ -1104,6 +1104,20 @@ body
   margin-left: -20px;
 }
 
+.catalog-item:hover .catalog-item__hover--main
+{
+  width: 300px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  border-radius: 7px;
+  display:block;
+  position: relative;
+  z-index: 9998;
+  margin-left: -20px;
+  top:0px;
+}
+
 .catalog-item:hover .catalog__photo
 {
   background-color: transparent;
@@ -1116,7 +1130,7 @@ body
   background-color: transparent;
   position: relative;
   left: 20px;
-  top:1px;
+  top:0px;
 }
 
 .catalog-item:hover .catalog__price
@@ -1147,7 +1161,8 @@ body
 
 .catalog-item:hover::before
 {
-  display: none;
+  z-index: 9999;
+  display: block;
 }
 
 .catalog-item:hover .catalog__button
@@ -2623,6 +2638,13 @@ input[type="radio"]:checked + label span{
   height: 340px;
   margin-bottom: 20px;
 }
+
+.catalog-item__page:hover::before
+{
+    display:none;
+}
+
+
 
 .catalog-item__page--hover
 {

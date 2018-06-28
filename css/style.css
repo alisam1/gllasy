@@ -1116,6 +1116,7 @@ body
   background-color: transparent;
   position: relative;
   left: 20px;
+  top:1px;
 }
 
 .catalog-item:hover .catalog__price

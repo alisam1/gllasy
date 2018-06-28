@@ -838,7 +838,6 @@ body
 {
   display: flex;
   justify-content: space-around;
-  margin-left: 10px;
 }
 
 .card
@@ -975,7 +974,7 @@ body
   line-height: 45px;
   color: #fff;
   position: relative;
-  bottom: 105px;
+  bottom: 110px;
 }
 
 .catalog__price span
@@ -1109,8 +1108,14 @@ body
 {
   background-color: transparent;
   position: relative;
-  bottom: 5px;
   left: 10px;
+}
+
+.catalog-item:hover .catalog__photo--main
+{
+  background-color: transparent;
+  position: relative;
+  left: 20px;
 }
 
 .catalog-item:hover .catalog__price
@@ -1120,12 +1125,23 @@ body
   left: 10px;
 }
 
+.catalog-item:hover .catalog__price--main
+{
+  position: relative;
+  bottom: 105px;
+  left: 20px;
+}
 
 .catalog-item:hover .catalog__description
 {
   position: relative;
   bottom: 130px;
   left: 10px;
+}
+
+.catalog-item:hover .catalog__description--main
+{
+  left: 20px;
 }
 
 .catalog-item:hover::before
@@ -1148,7 +1164,6 @@ body
   background-image: url("../img/features-background.jpg");
   background-size: cover;
   border-radius: 20px;
-  margin-left: 30px;
   position: relative;
   bottom: 190px;
 }
@@ -1276,7 +1291,6 @@ margin-right: 75px;
   display: flex;
   justify-content: space-around;
   margin-top: -180px;
-  margin-left: 10px;
 }
 
 .blog-card
@@ -1908,6 +1922,11 @@ margin-right: 75px;
 }
 
 /*catalog*/
+
+body
+{
+  background: #8da899 no-repeat;
+}
 
 .main-catalog
 {
@@ -2615,7 +2634,7 @@ input[type="radio"]:checked + label span{
   width: 300px;
   height: 400px;
   background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
+  position: absolute;
   border-radius: 7px;
   display:block;
   position: relative;
@@ -2627,7 +2646,6 @@ input[type="radio"]:checked + label span{
 {
   background-color: transparent;
   position: relative;
-  top: 2px;
 }
 
 .catalog-item:hover .catalog__price

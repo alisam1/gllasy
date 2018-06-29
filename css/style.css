@@ -1156,7 +1156,7 @@ body
 .catalog-item:hover .catalog__price--main
 {
   position: relative;
-  bottom: 105px;
+  bottom: 110px;
   left: 20px;
 }
 
